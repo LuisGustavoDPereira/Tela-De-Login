@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Login Banco"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+            rel="stylesheet"
+            type='text/css'
+        >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Inicio do Code-->
+    <div class="form-wrapper">
+        <div class="form-side">
+            <!--Inicio da Logo-->
+            <a href="#" title="Logo">
+                <img src="assents/ofin.png" class="logo" alt="Ofin">
+            </a><!--Fim do Logo-->
+
+            <form class="my-form">
+            <div class="form-welcome-row"><h1>Create your account &#x1F44F;</h1></div>
+            <div class="socials-row"> <!--Inicio Social Row-->
+                <a href="#" title="Use Google"> <img src="assents/google.png" alt="Google">Use Google</a>   
+                <a href="#" title="Use Apple"> <img src="assents/apple.png" alt="Apple">Use Apple</a>  
+            </div> <!--Fim Social Row-->
+            <div class="divider"> <!--Inicio Divider-->
+             <div class="divider-line"></div> or <div class="divider-line"></div>   
+            </div> <!--Fim Divider-->
+            <div class="text-field"> <!--Inicio Login-->
+             <label for="email"> Email:
+                <input type="email"
+                id="email"
+                name="email"
+                autocomplete="off"
+                placeholder="Your Email"
+                required
+                >
+                <!-- SVG ICON -->
+             </label>   
+            </div>
+            <div class="text-field">
+                <label for="password"> Password:
+                    <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Your Password"
+                    title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                    pattern="^(?=,*[A-Za-z])(?=,*\d)[A-Za-z\d]{6,}$"
+                    required
+                    >
+                    <!-- SVG ICON -->
+                </label>
+            </div> <!--Fim Login-->
+            <button type="submit" class="my-form__button">
+                Login
+            </button>
+            <div class="my-form__actions">
+                <a href="#" title="Reset Password">
+                    Reset Password
+                </a>
+                <a href="#" title="Create Account">
+                    Already have an account?
+                </a>
+                </div>
+            </form><!--Fim do Form-->
+        </div>
+        <div class="info-side">
+            <img src="/assents/mock.png" alt="Mock Up" class="mockup">
+        </div>
+    </div><!--Fim do Code-->
+    <script src="/script.js"></script>
+</body>
+</html>
